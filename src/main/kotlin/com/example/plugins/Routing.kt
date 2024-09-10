@@ -15,7 +15,7 @@ fun Application.configureRouting() {
     routing {
         staticResources("static", "static")
 
-        route("/tasks") {
+        route("/") {
             get {
                 val tasks = TaskRepository.allTasks()
                 call.respond(tasks)
